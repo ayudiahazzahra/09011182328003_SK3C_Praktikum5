@@ -16,11 +16,17 @@
 
 
 ![5 2](https://github.com/user-attachments/assets/62ac02bf-8dd2-4d6c-b941-c6b712305a1a)
+
 ![5 3](https://github.com/user-attachments/assets/ba99107d-4227-478d-bb44-0d760f7ad1b4)
+
 ![5 4](https://github.com/user-attachments/assets/5925735d-0241-4855-a947-455a4d170883)
+
 ![5 5](https://github.com/user-attachments/assets/de1b9d9d-ff1d-417a-b5ee-9b8615634297)
+
 ![5 6](https://github.com/user-attachments/assets/69e61fb7-3a2a-42fd-b137-d12ccc686e17)
+
 ![5 7](https://github.com/user-attachments/assets/0800f0e4-8cba-4a76-88ce-8bef1a36ac5e)
+
 ![5 8](https://github.com/user-attachments/assets/d6942e51-843d-4d81-b663-0046ae8aac9a)
 
 ### bash_profile: Dijalankan saat login ke login shell. Tempat yang baik untuk mengatur variabel lingkungan yang harus diinisialisasi sekali per login.
@@ -49,6 +55,7 @@
 ## export PS1
 
 ![5 13](https://github.com/user-attachments/assets/fff41851-ed8f-4348-9917-5609b591e709)
+
 ![5 14](https://github.com/user-attachments/assets/b789fc1a-1db1-4f57-a190-e8c4854d2534)
 
 ### PS1="> ": Mengubah tampilan prompt menjadi > .
@@ -84,8 +91,7 @@
 ## clear
 
 ![5 22](https://github.com/user-attachments/assets/aab28581-543d-40bf-b62b-78d886046b81)
-![23](https://github.com/user-attachments/assets/c8867a5a-2723-4b7c-8f39-edc2986378e0)
-
+![5 23](https://github.com/user-attachments/assets/d4cafedb-015e-4bec-a7e8-3bc347e4af07)
 ### cho "Terima kasih atas sesi yang diberikan":
 ### Menampilkan pesan perpisahan saat logout.
 ### Sleep 5:
@@ -108,10 +114,65 @@
 ##  echo “Program p3” 
 ## ps x
 
-![2 4](https://github.com/user-attachments/assets/bc3b1a4e-7465-4495-8e9b-d892fe5e5d99)
-![2 5](https://github.com/user-attachments/assets/d5c217ce-bff4-4f14-a50b-e2bffcd6f17c)
-![2 6](https://github.com/user-attachments/assets/4419d44d-1cf3-43d1-9504-5adde57e2688)
-![2 7](https://github.com/user-attachments/assets/bc9bb9c5-3e77-43da-b9ee-52575f55c0fc)
+![5 24](https://github.com/user-attachments/assets/a33b6dfd-4238-4da2-a23e-bddf3082f924)
+
+![5 25](https://github.com/user-attachments/assets/f155c0db-36a9-4eba-ae65-6ac9ff1d1446)
+
+![5 26](https://github.com/user-attachments/assets/9bd26266-2101-43f5-8542-f69f9e3b4d47)
+
+![5 27](https://github.com/user-attachments/assets/8bb260dc-3045-4cbb-97aa-462828b28e41)
+
+![5 28](https://github.com/user-attachments/assets/35343978-129a-44bf-95b2-46eaf6889ea6)
+
+![5 29](https://github.com/user-attachments/assets/f0996196-2da4-4453-b6bf-0bea840af334)
+
+![5 30](https://github.com/user-attachments/assets/931acf5f-b6cd-431c-a04e-cf71560236d6)
+
+![5 31](https://github.com/user-attachments/assets/0110c66d-2668-4f87-aeb9-6baf03c6cb87)
+
+![5 32](https://github.com/user-attachments/assets/79bbb4e8-8cf4-4349-900f-b1d52c48a0e9)
+
+![5 33](https://github.com/user-attachments/assets/22518f71-75c9-4d1c-9fa2-78460dbcb62a)
+
+![5 34](https://github.com/user-attachments/assets/b3bbaa67-2d4d-4984-ad6e-ca27e62b33b3)
+
+![5 35](https://github.com/user-attachments/assets/93469be8-f386-4177-936d-2d1cf8dde1b2)
+
+![5 36](https://github.com/user-attachments/assets/453aadd8-1303-4fcc-a6e9-43f43446d300)
+
+
+### p1.sh: Menampilkan daftar file/direktori saat ini secara rinci.
+### p2.sh: Menampilkan daftar pengguna yang sedang login ke sistem.
+### p3.sh: Menampilkan daftar proses yang sedang berjalan di sistem.
+
+# b. Jalankan sebagai background; kemudian jalankan satu program (utilitas find) di background sebagai berikut : 
+## $ jobs 
+## $ find / -print > files 2>/dev/null & 
+## $ jobs
+
+![5 37](https://github.com/user-attachments/assets/c4ffa0c1-b04d-452e-a109-bf88e6dc9a8c)
+
+![5 38](https://github.com/user-attachments/assets/a91459c3-15fd-4cdd-9c3a-075058feea8b) 
+
+
+### 1. jobs
+### Untuk memantau proses atau skrip yang sedang berjalan di background atau ditangguhkan (suspended).
+### 2. find / -print > files 2>/dev/null &
+### find / -print: Menjalankan utilitas find untuk mencari dan mencetak daftar semua file dari root (/).
+### > files: Mengalihkan output dari perintah find ke dalam file bernama files.
+### 2>/dev/null: Mengarahkan pesan error ke /dev/null (membuangnya), agar tidak memenuhi terminal dengan pesan kesalahan, seperti "permission denied".
+### &: Menjalankan perintah di background sehingga shell tetap tersedia untuk digunakan sementara perintah tersebut masih berjalan.
+### 3. jobs (Setelah find dijalankan di background)
+### Fungsi: Menampilkan daftar pekerjaan yang berjalan di background, termasuk find yang baru saja dijalankan. Ini akan menunjukkan status proses, seperti running (sedang berjalan) atau stopped (ditangguhkan).
+
+# c. Jadikan program ke 1 sebagai foreground, tekan ^Z dan kembalikan program tersebut ke background 
+## $ fg %1 
+## $ bg
+
+
+
+
+
 
 
 
