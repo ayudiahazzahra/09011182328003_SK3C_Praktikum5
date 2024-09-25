@@ -93,6 +93,26 @@
 ### clear:
 ### Membersihkan layar terminal setelah pesan dan penundaan selesai, sehingga sesi logout berakhir dengan layar yang bersih.
 
+# 4. Bash script 
+#a. Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi masing-masing : 
+## p1.sh 
+## #! /bin/bash 
+## echo “Program p1” 
+## ls –l 
+## p2.sh 
+## ! /bin/bash 
+##  echo “Program p2” 
+## who 
+## p3.sh 
+## #! /bin/bash 
+##  echo “Program p3” 
+## ps x
+
+![2 4](https://github.com/user-attachments/assets/bc3b1a4e-7465-4495-8e9b-d892fe5e5d99)
+![2 5](https://github.com/user-attachments/assets/d5c217ce-bff4-4f14-a50b-e2bffcd6f17c)
+![2 6](https://github.com/user-attachments/assets/4419d44d-1cf3-43d1-9504-5adde57e2688)
+![2 7](https://github.com/user-attachments/assets/bc9bb9c5-3e77-43da-b9ee-52575f55c0fc)
+
 
 
 
