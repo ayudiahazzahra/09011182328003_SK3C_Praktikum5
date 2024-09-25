@@ -100,7 +100,7 @@
 ### Membersihkan layar terminal setelah pesan dan penundaan selesai, sehingga sesi logout berakhir dengan layar yang bersih.
 
 # 4. Bash script 
-#a. Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi masing-masing : 
+## a. Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi masing-masing : 
 ## p1.sh 
 ## #! /bin/bash 
 ## echo “Program p1” 
@@ -168,6 +168,69 @@
 # c. Jadikan program ke 1 sebagai foreground, tekan ^Z dan kembalikan program tersebut ke background 
 ## $ fg %1 
 ## $ bg
+
+![5 39](https://github.com/user-attachments/assets/957eee7b-f0e1-4668-a532-8bc279b8fd87)
+
+### fg %1: Kegunaan: Memungkinkan pengguna mengembalikan pekerjaan yang sedang berjalan di background untuk menjalankannya di foreground, di mana ia dapat menerima input pengguna.
+### ^Z (Ctrl + Z): Kegunaan: Menangguhkan sementara proses yang sedang berjalan di foreground tanpa menghentikan atau membunuhnya
+### bg (Mengembalikan program yang ditangguhkan ke background): Perintah ini melanjutkan proses yang telah ditangguhkan dengan Ctrl + Z, tetapi menjalankannya kembali di background.
+
+# d. Stop program background dengan utilitas kil 
+## $ ps x 
+## $ kill [Nomor PID]
+
+![5 40](https://github.com/user-attachments/assets/31d82340-d799-48f7-907e-2436a2023377)
+
+![5 41](https://github.com/user-attachments/assets/f4664207-e07a-4c14-87d8-6a7eb8b8f1db)
+
+![5 42](https://github.com/user-attachments/assets/912375fd-40d9-497f-8b81-c5100cdd4a6b)
+
+### Ps x, Kegunaan: Menampilkan daftar semua proses yang berjalan di sistem, baik yang dijalankan di foreground maupun background. Output ini akan menyertakan PID (Process ID) dari setiap proses, yang diperlukan untuk menghentikannya.
+### kill [Nomor PID], Kegunaan: Menghentikan proses berdasarkan PID (Process ID) yang diperoleh dari ps x. Perintah ini mengirimkan sinyal SIGTERM ke proses yang ditentukan, meminta proses untuk berhenti secara teratur.
+### history, Kegunaan: Menampilkan daftar perintah yang telah dijalankan di sesi terminal saat ini. Setiap perintah yang dijalankan akan dicatat dengan nomor urutannya.
+
+# a. Ganti nilai HISTSIZE dari 1000 menjadi 20 
+## $ HISTSIZE=20 
+## $ h 
+# b. Gunakan fasilitas history dengan mengedit instruksi baris ke 5 dari instruksi yang terakhirdilakukan 
+##  $ !-5 
+# c. Ulangi instruksi yang terakhir. Gunakan juga ^P dan ^N untuk bernavigasi pada history bufer 
+## $ !! 
+# d. Ulangi instruksi pada history bufer nomor 150 
+## $ !150 
+# e. Ulangi instruksi dengan prefix “ls” 
+## $ !ls
+
+![5 43](https://github.com/user-attachments/assets/35fe8048-5d58-498c-b53e-fb5bcf40be5a)
+
+### HISTSIZE menentukan jumlah maksimum perintah yang akan disimpan dalam buffer history.
+### Dengan menetapkan HISTSIZE=20, kamu membatasi history untuk menyimpan hanya 20 perintah terakhir yang dijalankan, dibandingkan dengan default 1000.
+### Kegunaan utama: Menghemat ruang atau membatasi jumlah perintah dalam history.
+
+### kegunaan: h bisa menjadi alias untuk history, yang menampilkan daftar perintah terakhir.
+
+### Kegunaan: Menjalankan perintah ke-5 sebelum perintah terakhir yang dieksekusi.
+### !-5 mengacu pada 5 perintah sebelumnya dari urutan terakhir dalam history.
+### Kegunaan utama: Menjalankan perintah lama dengan cepat tanpa harus mencarinya atau mengetikkannya ulang.
+
+### !!: Mengulangi perintah terakhir yang dijalankan.
+
+### Kegunaan utama: Berguna untuk menjalankan ulang perintah terakhir dengan cepat, misalnya jika ada kesalahan atau jika perlu dijalankan kembali. ^P (Ctrl + P):
+
+### Navigasi ke perintah sebelumnya di history buffer.Kegunaan utama: Mengakses perintah sebelumnya secara manual tanpa harus mengetik history. ^N (Ctrl + N):
+
+### Navigasi ke perintah berikutnya di history buffer (jika sudah menggunakan ^P atau melihat perintah sebelumnya). Kegunaan utama: Bergerak maju di history buffer.
+
+### Kegunaan: Menjalankan perintah nomor 150 dari history.
+### Kegunaan utama: Sangat berguna untuk mengulang perintah spesifik yang diidentifikasi dengan nomor history, misalnya saat bekerja dengan urutan perintah yang panjang.
+
+### !ls mencari perintah terakhir di history yang dimulai dengan "ls" dan menjalankannya kembali.
+### Kegunaan utama: Memudahkan dalam mengulangi perintah dengan awalan tertentu tanpa harus mengetik perintah lengkap atau mencari di history secara manual.
+
+
+
+
+
 
 
 
