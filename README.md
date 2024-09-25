@@ -28,7 +28,7 @@
 ### profile: File umum yang digunakan oleh beberapa shell, digunakan untuk inisialisasi lingkungan di berbagai shell.
 ### bashrc: Dijalankan pada setiap instansi non-login shell. Umumnya digunakan untuk mengatur alias dan fungsi.
 
-# c. c. Jalankan instruksi subtitute user, kemudian keluar dengan perintah exit sebagai berikut: 
+# c. Jalankan instruksi subtitute user, kemudian keluar dengan perintah exit sebagai berikut: 
 ## $ su mahasiswa 
 ## $ exit 
 ## kemudian gunakan opsi – sebagai berikut : 
@@ -40,7 +40,39 @@
 ![5 11](https://github.com/user-attachments/assets/565c297d-68c7-40f1-9f89-6ae72c33796b)
 ![5 12](https://github.com/user-attachments/assets/d7dc3bda-a85f-44c6-a61c-c2520afb2676)
 
-###
+### su mahasiswa digunakan saat kamu hanya perlu berganti otorisasi ke pengguna lain tanpa mengubah lingkungan shell.
+### su – mahasiswa digunakan saat kamu ingin sepenuhnya berpindah ke pengguna lain dan memuat seluruh konfigurasi lingkungan shell mereka, seperti variabel PATH, alias, dan pengaturan lainnya.
+
+# 2. Prompt String (PS) 
+## a. Edit file .bash_profile, ganti prompt PS1 dengan ‘>’. Instruksi export diperlukan dengan parameter nama variable tersebut, agar perubahan variable PS1 dikenal oleh semua shell 
+## PS1=‟>
+## export PS1
+
+![5 13](https://github.com/user-attachments/assets/fff41851-ed8f-4348-9917-5609b591e709)
+![5 14](https://github.com/user-attachments/assets/b789fc1a-1db1-4f57-a190-e8c4854d2534)
+
+### PS1="> ": Mengubah tampilan prompt menjadi > .
+### export PS1: Menyebarkan perubahan variabel PS1 agar dikenal oleh semua shell, termasuk sub-shell.
+
+## b. Eksperimen hasil PS1 :
+## $ PS1=“\! > “ 
+## 69 > PS1=”\d > “ 
+## Mon Sep 23 > PS1=”\t > “ 
+## 10:10:20 > PS1=”Saya=\u > “ 
+## Saya=mahasiswa > PS1=”\w >” 
+## ~ > PS1=\h >”
+
+![5 15](https://github.com/user-attachments/assets/f132dc59-4979-499f-b873-a8043e2588f6)
+![5 16](https://github.com/user-attachments/assets/be15dc93-70bd-4a94-a26e-ef8a35c9e829)
+![5 17](https://github.com/user-attachments/assets/1998172d-d0de-4e56-915f-0992adf8fb36)
+![5 18](https://github.com/user-attachments/assets/567d1f79-30e6-4139-b1a1-7436ba87aab3)
+![5 19](https://github.com/user-attachments/assets/ff11ef8b-56c8-4ab9-bbe5-1ac3b4a88191)
+![5 20](https://github.com/user-attachments/assets/b6a78583-dc4e-469b-aa62-06c14a3ce7c7)
+![5 21](https://github.com/user-attachments/assets/69c7e1a5-cabc-4794-90bf-713665e6350c)
+
+### 
+
+
 
 
 
