@@ -70,7 +70,30 @@
 ![5 20](https://github.com/user-attachments/assets/b6a78583-dc4e-469b-aa62-06c14a3ce7c7)
 ![5 21](https://github.com/user-attachments/assets/69c7e1a5-cabc-4794-90bf-713665e6350c)
 
-### 
+### \! → Menampilkan nomor perintah di history.
+### \d → Menampilkan tanggal saat ini.
+### \t → Menampilkan waktu saat ini.
+### \u → Menampilkan nama pengguna saat ini.
+### \w → Menampilkan direktori kerja saat ini.
+### \h → Menampilkan hostname (nama mesin).
+
+# 3. Logout 
+## Edit file .bash_logout, tampilkan pesan dan tahan selama 5 detik, sebelum eksekusi logout 
+## Echo “Terima kasih atas sesi yang diberikan”
+## Sleep 5 
+## clear
+
+![5 22](https://github.com/user-attachments/assets/aab28581-543d-40bf-b62b-78d886046b81)
+![23](https://github.com/user-attachments/assets/c8867a5a-2723-4b7c-8f39-edc2986378e0)
+
+### cho "Terima kasih atas sesi yang diberikan":
+### Menampilkan pesan perpisahan saat logout.
+### Sleep 5:
+### Menunda proses logout selama 5 detik, memberikan waktu untuk melihat pesan yang ditampilkan.
+### clear:
+### Membersihkan layar terminal setelah pesan dan penundaan selesai, sehingga sesi logout berakhir dengan layar yang bersih.
+
+
 
 
 
